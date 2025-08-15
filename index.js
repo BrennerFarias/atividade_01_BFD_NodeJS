@@ -1,5 +1,5 @@
 //Exercicio 1 - Solicite a idade de um usuário e se possui carteira de habilitação. Use IF com operador lógico && para verificar se tem 18 anos ou mais e carteira igual a "sim". Caso verdadeiro, exibir que pode dirigir, senão, exibe que não pode.
-/*
+
 const prompt = require ('prompt-sync')();
 let nome = prompt ('Informe o seu nome: ')
 let idade = Number (prompt('Digite sua idade: '))
@@ -9,11 +9,11 @@ if (nome && idade >= 18){
 } else {
     console.log('Você não tem permissão de dirigir!')
 }  
-    */
+    
 
 //Exercicio 2 - faça um programa que crie a média final e a frequência do aluno. Use IF com o operador lógico && para verificar se a média é maior ou igual a 7 e a frequência maior ou igual a 75. Se verdadeiro, exibir que foi aprovado, senão que foi reprovado.
 
-/*
+
 
 const prompt = require ('prompt-sync')();
 let nota1 = Number (prompt('Nota da primeira unidade: '))
@@ -31,11 +31,11 @@ if (media >=7 && mediaDeAula >= 75) {
     console.log(Você foi reprovado! Ficou com média ${media} e ${mediaDeAula.toFixed(1)}% de aproveitamento)
 } //Usei a IA para me ajudar na formatação da média, usando sem o .tofixed, ficaram várias casas decimais.
 
-*/
+
 
 //exercicio 3 - Solicite ao usuário que digite o dia da semana e utilizando IF e ELSE IF, exiba mensagens diferentes para cada dia. Se for sábado OU domingo, exibir uma mensagem de fim de semana. Caso seja inválido, exibir aviso.
 
-/*
+
 const prompt = require ('prompt-sync')();
 let dia = prompt ('Dale boy, que dia é hoje? ')
 let diaFDS = ['sabado', 'domingo']
@@ -49,13 +49,13 @@ if (diaFDS.includes(dia)) {
     console.log('Não reconheço esse comando, donzelo')
 }   
     
-*/
+
 
 //Obs: Não demos aula de arrays, pesquisei na IA pra entender como funciona e me liguei :)
 
 //Exercicio 4 - Solicite dois numeros e um simbolo de operação (+, -, *, /). Utilize IF e ElSE IF para verificar qual operação foi escolhida e mostrar o resultado. Caso seja inválida, exibir aviso.
 
-/*
+
 
 const prompt = require ('prompt-sync')()
 
@@ -79,12 +79,12 @@ if (operador === '+') {
 }
     //NOTAS: Auxilio do gpt para organizar e declarar como ficariam os operadores e na construção do "erro" e operação inválida.
 
-*/
+
 
 
 //Exercicio 5 - Verificador de faixa etária: Solicite que o usuário entre com sua idade e utilize IF e ELSE IF para classificar e exibir uma mensagem apropriada. Se a idade for menor que 12 anos, exiba "Você é uma criança". Se estiver entre 12 e 17 anos, exiba "Você é um adolescente". Se estiver entre 18 e 59 anos, exiba "Você é um adulto" e se for 60+, informe que é um idoso. Caso o valor digitado seja invalido, mostre "idade inválida, tente novamente"
 
-/*
+
 
 const prompt = require ('prompt-sync')()
 let nome = prompt('Digite seu nome: ')
@@ -102,13 +102,13 @@ if (idade < 0 || isNaN(idade)) {
     console.log('Você já é coroa!');
 }
 
-*/
+
         //Notas: GPt para me ajudar a encontrar o comando IsNaN, muito legal para saber como colocar caracter inválido sem ser de números :)
 
 
 //Exercicio 6 - solicite ao usuário o valor total da compra e utilize IF e ELSE IF para aplicar um desconto conforme o valor informado. Se o valor for menor que R$ 100, exiba "Sem desconto". de R$ 100 até R$199, aplique 10% de desconto. De R$200 até R$499, aplique 20% de desconto, se for de R$500 ou mais, aplique 30%. Mostre o valor já com o desconto aplicado, caso o valor seja inválido, exiba "Valor inválido, tente novamente."
 
-/*
+
 
 const prompt = require ('prompt-sync')()
 console.log('Calculadora de desconto :)')
@@ -133,14 +133,14 @@ let valorFinal3 = valorDaCompra - desconto30
     console.log (`30% de desconto foi aplicado a sua compra! Valor final: ${valorFinal3.toFixed(2)} `)
 }
 
-*/
+
 
   //Notas: por burrice minha em matemática, não sabia como descontar em porcetagem passo a passo, então foi necessário a ajuda da IA.
 
   
 //Exercicio - 7 solicite ao usuario um numero e utilize IF e Else para verificar se ele é PAR ou IMPAR, exibindo a mensagem correspondente. Caso o valor digitado não seja um número válido, mostre "Número inválido"
 
-/*
+
 
 const prompt = require ('prompt-sync')();
 console.log('É par ou impar? :)')
@@ -154,13 +154,13 @@ if (isNaN(numero)) {
     console.log('Esse número é ímpar!')
 }
 
-*/
+
 
   //Usei a pesquisa para lembrar como um número se tornava par. em seguida, apenas um else já retornava seu oposto.
 
   //Exercicio 8 - pergunte a idade de um usuário e se ele possui permissão dos pais, sendo a resposta "sim" ou "nao". o programa deve permitir o acesso se o usuário tiver 18 anos ou mais. caso contrario, o acesso só deve ser permitido se ele tiver permissão dos pais. se nenhuma dessas condições for atendida, o programa deve negar o acesso
 
-/*
+
 
   const prompt = require('prompt-sync')()
 
@@ -176,7 +176,7 @@ if (isNaN(numero)) {
     }
   }
 
-    */  
+     
 
      //Notas: empaquei na linha 171 por causa do ToLowerCase, mas lendo conteúdos, consegui compreender.
 
