@@ -19,7 +19,7 @@ const prompt = require ('prompt-sync')();
 let nota1 = Number (prompt('Nota da primeira unidade: '))
 let nota2 = Number (prompt('Nota da segunda unidade: '))
 let media = (nota1 + nota2) / 2
-//Na linha 81 e 83tive como auxilio da IA para me ajudar a montar a frequencia.
+//Na linha 26 e 28 tive como auxilio da IA para me ajudar a montar a frequencia.
 
 let aulasTotais = 45
 let aulasAssistidas = Number(prompt('Quantas aulas você assistiu? '))
