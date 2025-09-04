@@ -19,7 +19,7 @@ const prompt = require ('prompt-sync')();
 let nota1 = Number (prompt('Nota da primeira unidade: '))
 let nota2 = Number (prompt('Nota da segunda unidade: '))
 let media = (nota1 + nota2) / 2
-//Na linha 26 e 28 tive como auxilio da IA para me ajudar a montar a frequencia.
+
 
 let aulasTotais = 45
 let aulasAssistidas = Number(prompt('Quantas aulas você assistiu? '))
@@ -29,7 +29,7 @@ if (media >=7 && mediaDeAula >= 75) {
     console.log(Você ficou com média ${media}, e seu aproveitamento no curso foi de ${mediaDeAula.toFixed(1)}%, portanto FOI APROVADO!!)
 } else {
     console.log(Você foi reprovado! Ficou com média ${media} e ${mediaDeAula.toFixed(1)}% de aproveitamento)
-} //Usei a IA para me ajudar na formatação da média, usando sem o .tofixed, ficaram várias casas decimais.
+} 
 
 
 
@@ -51,7 +51,6 @@ if (diaFDS.includes(dia)) {
     
 
 
-//Obs: Não demos aula de arrays, pesquisei na IA pra entender como funciona e me liguei :)
 
 //Exercicio 4 - Solicite dois numeros e um simbolo de operação (+, -, *, /). Utilize IF e ElSE IF para verificar qual operação foi escolhida e mostrar o resultado. Caso seja inválida, exibir aviso.
 
@@ -77,7 +76,7 @@ if (operador === '+') {
 } else {
     console.log('Operação inválida! Use apenas +, - , * , / ')
 }
-    //NOTAS: Auxilio do gpt para organizar e declarar como ficariam os operadores e na construção do "erro" e operação inválida.
+    
 
 
 
@@ -103,7 +102,7 @@ if (idade < 0 || isNaN(idade)) {
 }
 
 
-        //Notas: GPt para me ajudar a encontrar o comando IsNaN, muito legal para saber como colocar caracter inválido sem ser de números :)
+       
 
 
 //Exercicio 6 - solicite ao usuário o valor total da compra e utilize IF e ELSE IF para aplicar um desconto conforme o valor informado. Se o valor for menor que R$ 100, exiba "Sem desconto". de R$ 100 até R$199, aplique 10% de desconto. De R$200 até R$499, aplique 20% de desconto, se for de R$500 ou mais, aplique 30%. Mostre o valor já com o desconto aplicado, caso o valor seja inválido, exiba "Valor inválido, tente novamente."
@@ -135,8 +134,7 @@ let valorFinal3 = valorDaCompra - desconto30
 
 
 
-  //Notas: por burrice minha em matemática, não sabia como descontar em porcetagem passo a passo, então foi necessário a ajuda da IA.
-
+  
   
 //Exercicio - 7 solicite ao usuario um numero e utilize IF e Else para verificar se ele é PAR ou IMPAR, exibindo a mensagem correspondente. Caso o valor digitado não seja um número válido, mostre "Número inválido"
 
@@ -156,7 +154,7 @@ if (isNaN(numero)) {
 
 
 
-  //Usei a pesquisa para lembrar como um número se tornava par. em seguida, apenas um else já retornava seu oposto.
+  
 
   //Exercicio 8 - pergunte a idade de um usuário e se ele possui permissão dos pais, sendo a resposta "sim" ou "nao". o programa deve permitir o acesso se o usuário tiver 18 anos ou mais. caso contrario, o acesso só deve ser permitido se ele tiver permissão dos pais. se nenhuma dessas condições for atendida, o programa deve negar o acesso
 
@@ -178,7 +176,3 @@ if (isNaN(numero)) {
 
      
 
-     //Notas: empaquei na linha 171 por causa do ToLowerCase, mas lendo conteúdos, consegui compreender.
-
-//Considerações finais: Os exercícios foram bem legais, espero que toda semana tenha! Senti um pouco de dificuldade, demorei um tempo considerável para conseguir resolver tudo (do meu jeito, sei que alguns códigos podem ser desnecessários) porém fiz com muita dedicação e empenho. Tive ajuda externa como nas notas que deixei nos programas, porém saio de cabeça tranquila sabendo que não fiz ctrl c + ctrl v, buscando assim entender o motivo e a função de cada descoberta. Valeu Nat :)
-  
